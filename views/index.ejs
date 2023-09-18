@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>To-Do List</title>
+
+</head>
+<body>
+    <div class="header">
+        <h1>TO DO LIST</h1>
+    </div>
+    <div class="box">
+        <% for(var i=0; i < tasks.length; i++){ %>
+            <div class="item">
+                <input type="checkbox" name="checkbox" class="task-checkbox" id="check<%= i %>">
+                <p> <%= tasks[i] %></p>
+            </div>
+        <% } %>
+    </div>
+    <div class="box">
+        <form class="item" action="/" method="post">
+            <input type="text" name="task" placeholder="ENTER YOUR TASK">
+            <button type="submit">+</button>
+        </form>
+    </div>
+    
+</body>
+<script>
+    // Get all checkboxes by class name
+    const checkboxes = document.querySelectorAll('.task-checkbox');
+
+    // Add click event listeners to checkboxes
+    checkboxes.forEach((checkbox, index) => {
+        checkbox.addEventListener('click', () => {
+            if (checkbox.checked) {
+                // Checkbox is checked, you can perform actions here
+                alert(`Task ${index + 1} is completed!`);
+            } else {
+                // Checkbox is unchecked, you can perform actions here
+            }
+        });
+    });
+</script>
+</html>

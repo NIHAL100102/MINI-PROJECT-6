@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Lilita+One&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+html {
+   background-color: #2e4bbc;
+  background-image: repeating-conic-gradient( #c2fd37 44%,rgb(48, 128, 241) 60%);
+  min-height: 1000px;
+}
+
+.header{ 
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button:hover{
+  font-size: 50px;
+  height: 60px;
+  width: 60px;
+}
+
+h1 {
+  color: #4a0ad4;
+  padding: 10px;
+}
+h1{
+  margin: 30px;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 5rem;
+    color: #1e35c6;
+    margin-top: -15px;
+}
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgb(236, 39, 233);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(78, 26, 201, 0.3);
+}
+
+#heading {
+  background-color: #f6f6f7;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+  font-family: 'Lilita One', cursive;
+  color: rgb(10, 10, 10);
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #ffffff;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #000000;
+  font-size: 40px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #070111;
+}
+
+::placeholder {
+  color: rgb(10, 10, 10);
+  opacity: 1;
+  font-family: 'Lilita One', cursive;
+}
+
+footer {
+  color: white;
+  color: rgba(161, 202, 27, 0.5);
+  text-align: center;
+}
